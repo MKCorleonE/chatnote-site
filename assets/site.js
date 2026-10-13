@@ -1,15 +1,22 @@
+const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const toast=document.querySelector('#toast');let toastTimer,leaveTimer;
-function notice(text){clearTimeout(toastTimer);clearTimeout(leaveTimer);toast.textContent=text;toast.className='visible';toastTimer=setTimeout(()=>{toast.classList.add('leaving');leaveTimer=setTimeout(()=>toast.className='',220)},2400);}
+function notice(text){clearTimeout(toastTimer);clearTimeout(leaveTimer);toast.textContent=text;toast.className='visible';toastTimer=setTimeout(()=>{toast.classList.add('leaving');leaveTimer=setTimeout(()=>toast.className='',180)},2400);}
 document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(button.dataset.copy);notice(document.body.dataset.copied)}catch{notice(document.body.dataset.copyFailed)}}));
-const play=document.querySelector('#demo-play');
-if(play){
- const seek=document.querySelector('#demo-seek'),clock=document.querySelector('#demo-time'),frames=[...document.querySelectorAll('.demo-frame')],chapters=[...document.querySelectorAll('[data-chapter]')],caption=document.querySelector('#demo-caption'),captions=JSON.parse(document.querySelector('#demo-captions').textContent);
- let elapsed=0,playing=false,last=0,raf;
- function render(){const chapter=Math.min(3,Math.floor(elapsed/11.25));frames.forEach((frame,i)=>{frame.classList.toggle('active',i===chapter);frame.setAttribute('aria-hidden',String(i!==chapter))});chapters.forEach((button,i)=>button.setAttribute('aria-pressed',String(i===chapter)));caption.textContent=captions[chapter];seek.value=String(elapsed);clock.textContent=`00:${String(Math.floor(elapsed)).padStart(2,'0')} / 00:45`;play.textContent=playing?play.dataset.pause:play.dataset.play;play.setAttribute('aria-pressed',String(playing));}
- function tick(now){if(!playing)return;elapsed=Math.min(45,elapsed+(now-last)/1000);last=now;if(elapsed===45)playing=false;render();if(playing)raf=requestAnimationFrame(tick);}
- function stop(){playing=false;cancelAnimationFrame(raf);render();}
- play.addEventListener('click',()=>{if(playing){stop();return}if(elapsed>=45)elapsed=0;playing=true;last=performance.now();render();raf=requestAnimationFrame(tick);});
- seek.addEventListener('input',()=>{elapsed=Number(seek.value);last=performance.now();render();});
- chapters.forEach(button=>button.addEventListener('click',()=>{stop();elapsed=Number(button.dataset.chapter)*11.25;render();}));
- document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();});render();
+document.querySelectorAll('.context-preview').forEach(preview=>{const inputs=[...preview.querySelectorAll('input:not(:disabled)')],count=preview.querySelector('output b');inputs.forEach(input=>input.addEventListener('change',()=>count.textContent=String(inputs.filter(i=>i.checked).length)));});
+const chapter=document.querySelector('.forest-chapter'),steps=[...document.querySelectorAll('[data-step]')];
+if(chapter){
+ const stage=chapter.querySelector('.hero-stage'),scene=chapter.querySelector('.forest-scene'),world=chapter.querySelector('.forest-world'),word=chapter.querySelector('.hero-word'),copy=chapter.querySelector('.hero-copy'),cue=chapter.querySelector('.scroll-cue'),endLine=chapter.querySelector('.scene-end-line'),trail=chapter.querySelector('.active-trail'),point=chapter.querySelector('.trail-point');
+ const length=trail.getTotalLength();trail.style.strokeDasharray=String(length);trail.style.strokeDashoffset=String(-length);
+ const trees=[...chapter.querySelectorAll('[data-depth]')],heroLink=copy.querySelector('a');
+ const clamp=(v,min=0,max=1)=>Math.max(min,Math.min(max,v)),smooth=v=>v*v*(3-2*v);
+ let progress=0,target=0,frame=0,feature=-1,buttonLock=0;
+ function setFeature(n){if(n===feature)return;feature=n;steps.forEach((step,i)=>step.classList.toggle('is-active',i===n));document.querySelectorAll('[data-feature]').forEach((button,i)=>button.setAttribute('aria-pressed',String(i===n)));document.querySelectorAll('[data-preview]').forEach((preview,i)=>{preview.classList.toggle('is-active',i===n);preview.inert=i!==n;preview.setAttribute('aria-hidden',String(i!==n));});}
+ function measure(){const rect=chapter.getBoundingClientRect();target=reduced.matches?0:clamp(-rect.top/Math.max(1,chapter.offsetHeight-stage.offsetHeight));if(performance.now()>buttonLock){let nearest=0,distance=Infinity;steps.forEach((step,i)=>{const r=step.getBoundingClientRect(),d=Math.abs((r.top+r.bottom)/2-innerHeight*.52);if(d<distance){distance=d;nearest=i;}});setFeature(nearest);}}
+ function render(){const p=smooth(progress),travel=smooth(clamp((p-.08)/.84)),scale=1+travel*4.4,location=trail.getPointAtLength(length*(1-travel));const mix=clamp(travel*1.55),cx=256+(location.x-256)*mix,cy=268+(location.y-268)*mix;
+  world.setAttribute('transform',`translate(256 256) scale(${scale}) translate(${-cx} ${-cy})`);trees.forEach(tree=>{const depth=Number(tree.dataset.depth);tree.setAttribute('transform',`translate(${(depth-.85)*p*14} ${(1-depth)*p*-24})`);});const fade=1-smooth(clamp((p-.67)/.28));scene.style.opacity=String(fade);word.style.opacity=String(1-smooth(clamp(p/.38)));word.style.transform=`translateX(-50%) translateY(${-p*65}px)`;copy.style.opacity=String(1-smooth(clamp(p/.3)));copy.style.transform=`translateY(${-p*35}px)`;heroLink.inert=p>.28;cue.style.opacity=String(1-smooth(clamp(p/.16)));cue.inert=p>.16;trail.style.opacity=String(smooth(clamp(p/.1)));trail.style.strokeDashoffset=String(-length*(1-travel));point.setAttribute('cx',String(location.x));point.setAttribute('cy',String(location.y));point.setAttribute('r',String(3.6/scale));point.style.opacity=String(p>.04&&p<.86?1:0);endLine.style.opacity=String(smooth(clamp((p-.8)/.18)));endLine.style.transform=`scaleY(${smooth(clamp((p-.78)/.2))})`;
+ }
+ function tick(){progress+=(target-progress)*.2;if(Math.abs(target-progress)<.001)progress=target;render();if(progress!==target)frame=requestAnimationFrame(tick);else frame=0;}
+ function update(){measure();if(!frame)frame=requestAnimationFrame(tick);}
+ document.querySelectorAll('[data-feature]').forEach(button=>button.addEventListener('click',()=>{const n=Number(button.dataset.feature);setFeature(n);buttonLock=performance.now()+900;steps[n].scrollIntoView({behavior:reduced.matches?'instant':'smooth',block:'center'});}));
+ addEventListener('scroll',update,{passive:true});addEventListener('resize',update,{passive:true});reduced.addEventListener('change',()=>{progress=0;update();});addEventListener('pageshow',update);update();
 }

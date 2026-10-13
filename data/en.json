@@ -1,12 +1,12 @@
 {
   "lang": "en",
-  "title": "ChatNote · Follow a question. Keep the insight.",
-  "description": "A Windows AI conversation tool for learning. Ask beside the source, keep local notes, and revisit your thinking through mind maps.",
+  "title": "ChatNote · Explore every question without losing the thread.",
+  "description": "Source-linked follow-ups, local notes, and mind maps. Explore every question without losing the thread.",
   "skip": "Skip to main content",
   "navFeatures": "Features",
   "navGuide": "Get started",
   "navDownloads": "Download",
-  "navContact": "Get involved",
+  "navContact": "Contact",
   "language": "Language",
   "beta": "Free beta · Windows x64",
   "heroA": "Follow a question.",
@@ -25,21 +25,6 @@
   "step2text": "Select text or an equation to start a separate follow-up. Return to its source without searching a long conversation.",
   "step3": "Take your understanding with you",
   "step3text": "Review the question hierarchy, add your own notes, then export learning notes or an HTML mind map.",
-  "demoLabel": "45 SECONDS · SYNTHETIC WALKTHROUGH",
-  "demoTitle": "See where an insight came from.",
-  "demoText": "Pause or jump through this guided presentation of current app screenshots and prepared content. It sends no model requests.",
-  "play": "Play walkthrough",
-  "pause": "Pause walkthrough",
-  "demo1": "01 / Conversation and source follow-up",
-  "demo2": "02 / Connections between questions",
-  "demo3": "03 / Choose your context",
-  "demo4": "04 / Export a learning artifact",
-  "demoCaptions": [
-    "Explore a source passage in the right panel while keeping the main thread on the left.",
-    "Review the hierarchy in a horizontal map. Expand details and adjust card widths.",
-    "Send directly by default. Open context selection when needed; your selection stays saved.",
-    "Export notes or an HTML mind map to take your saved learning process with you."
-  ],
   "openMap": "Open the interactive mind map example",
   "sampleNote": "Synthetic learning content exported from the current app. Expand cards and drag to resize. Example passages remain in Simplified Chinese.",
   "featureLabel": "DETAILS FOR THOUGHTFUL READING",
@@ -172,7 +157,7 @@
     ],
     [
       "Website preferences",
-      "Language is selected through page URLs. Walkthrough progress stays only in the current page. There are no accounts, and the website collects no chats or API keys. Copy buttons write only the public text you deliberately select to the clipboard."
+      "Language is selected through page URLs. Selections in interface illustrations stay only in the current page. There are no accounts, and the website collects no chats or API keys. Copy buttons write only the public text you deliberately select to the clipboard."
     ],
     [
       "Local client storage",
@@ -239,6 +224,10 @@
     [
       "Website launch · 2026-10-13",
       "An independent public website, three-language guides, a synthetic interface walkthrough and interactive mind map. Installers are mirrored to independent public Releases while application source stays private."
+    ],
+    [
+      "Website visual redesign · 2026-10-13",
+      "A scroll-driven forest and winding thread, the original motto, three focused features, and separate detail pages. The walkthrough video is removed. Client version and download assets remain unchanged."
     ]
   ],
   "validation": "Validation limits: Windows checks for 0.12.0 include 146 frontend tests, 28 routine native tests (5 explicitly ignored), compilation and formatting. Real API accounts, recording hardware, fresh-machine installation and upgrades, and long-term use still need human validation.",
@@ -255,5 +244,48 @@
   "feedbackTemplate": "Feedback format",
   "feedbackFields": "Version / Windows version / network type / reproduction steps / expected result / actual result / sanitized screenshot. Do not send API keys, complete private workspaces or sensitive information.",
   "pending": "Testers must complete these steps in practice. Automated checks and synthetic demonstrations do not replace real-account, device or regional network validation.",
-  "videoDownload": "Download walkthrough"
+  "motto": "Explore every question without losing the thread.",
+  "heroTags": "Source follow-ups · Local notes · Mind maps",
+  "scrollCue": "Follow the thread",
+  "featuresTitle": "From questions to understanding.",
+  "featureTitles": [
+    "Ask beside the source",
+    "Choose your context",
+    "Keep what you learn"
+  ],
+  "featureDescriptions": [
+    "Select a passage. Keep asking beside it.",
+    "Choose what this request carries.",
+    "Take your notes and mind map with you."
+  ],
+  "sampleLabel": "Synthetic interface illustration",
+  "sampleMain": "Main thread",
+  "sampleFollow": "Follow-up",
+  "sampleQuestion": "What do Q, K and V do?",
+  "samplePassage": "Q describes what a position is looking for.",
+  "sampleFollowQuestion": "Why separate Q and K?",
+  "sampleAnswer": "One expresses a need; the other offers matching features.",
+  "sampleContext": "Context for this request",
+  "sampleHistory": "Source answer",
+  "sampleBranch": "Follow-up history",
+  "sampleSibling": "Other follow-ups",
+  "samplePrivate": "Private notes",
+  "sampleSelected": "Selected",
+  "sampleNoteTitle": "My learning notes",
+  "sampleNoteBody": "Querying and matching have different roles.",
+  "sampleMapRoot": "Attention",
+  "sampleMapChild": "Q and K",
+  "sampleMapLeaf": "Different roles",
+  "homeDownloadTitle": "Start your next exploration.",
+  "homeDownloadMeta": "Free beta · Windows x64 · Your own API",
+  "downloadDetails": "Other downloads & checksums",
+  "downloadPageTitle": "Downloads & checksums",
+  "contactPageTitle": "Improve ChatNote together",
+  "faqPageTitle": "Frequently asked questions",
+  "contactShort": "Share feedback, or help build ChatNote.",
+  "fullInterface": "See the full interface",
+  "compactFooter": "Conversations stay on your device.",
+  "unsignedCompact": "This version is unsigned. Read the use information before downloading.",
+  "homeExplore": "Explore features",
+  "sampleRequired": "The quote and current question stay included."
 }

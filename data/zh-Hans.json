@@ -1,12 +1,12 @@
 {
   "lang": "zh-Hans",
-  "title": "ChatNote · 让每一次追问，留下理解的线索。",
-  "description": "面向学习的 Windows AI 对话工具。原文追问、本机笔记、思维导图，把一次对话变成可以回看的学习过程。",
+  "title": "ChatNote · 探索每一个问题，同时不偏离主线。",
+  "description": "原文追问、本地笔记、思维导图。探索每一个问题，同时不偏离主线。",
   "skip": "跳到主要内容",
   "navFeatures": "功能",
   "navGuide": "快速开始",
   "navDownloads": "下载",
-  "navContact": "一起改进",
+  "navContact": "联系",
   "language": "语言",
   "beta": "免费测试版 · Windows x64",
   "heroA": "让每一次追问，",
@@ -25,21 +25,6 @@
   "step2text": "选中回答里的文字或公式，开启独立追问。随时回到出处，不必在长对话里反复寻找。",
   "step3": "把理解带走",
   "step3text": "查看追问层级，写下自己的笔记，再导出学习笔记或思维导图 HTML。",
-  "demoLabel": "45 秒 · 合成场景导览",
-  "demoTitle": "看见思考的来路。",
-  "demoText": "这段可暂停、可跳转的界面导览使用当前应用截图与预先准备的内容，不发送模型请求。",
-  "play": "播放导览",
-  "pause": "暂停导览",
-  "demo1": "01 / 主线与原文追问",
-  "demo2": "02 / 看见问题之间的连接",
-  "demo3": "03 / 选择发送的上下文",
-  "demo4": "04 / 导出一份学习成果",
-  "demoCaptions": [
-    "选中原文中的疑问，在右侧继续探索；主线保留在左侧。",
-    "用横向导图回顾层级关系，展开卡片查看细节，并调整卡片宽度。",
-    "默认直接发送；需要时主动选择上下文，范围会保留。",
-    "导出笔记或导图 HTML，把已经保存的学习过程带走。"
-  ],
   "openMap": "打开可交互的导图示例",
   "sampleNote": "使用当前应用导出的合成学习内容。可展开卡片、拖动调整宽度；演示原文以简体中文保留。",
   "featureLabel": "适合认真阅读的细节",
@@ -172,7 +157,7 @@
     ],
     [
       "官网本机偏好",
-      "语言通过不同页面地址切换。导览进度仅保留在当前页面内，不建立用户账号、不收集聊天或 API 密钥。复制按钮访问剪贴板仅用于写入用户点击选择的公开文字。"
+      "语言通过不同页面地址切换。界面示意中的选择仅保留在当前页面内，不建立用户账号、不收集聊天或 API 密钥。复制按钮访问剪贴板仅用于写入用户点击选择的公开文字。"
     ],
     [
       "客户端本机保存",
@@ -239,6 +224,10 @@
     [
       "官网首发 · 2026-10-13",
       "独立公开官网、三语说明、合成界面导览与可交互导图；安装包迁入独立公开 Releases，应用源码仓库继续私有。"
+    ],
+    [
+      "官网视觉重构 · 2026-10-13",
+      "森林与弯曲主线随滚动推进，恢复原座右铭，精简为三个功能与下载入口；移除展示视频，详细说明改为独立页面。客户端版本与下载文件保持不变。"
     ]
   ],
   "validation": "验证边界：0.12.0 的 Windows 自动检查包含 146 项前端、28 项常规原生测试（5 项显式忽略）、编译与格式检查。真实 API 账号、录音硬件、新电脑安装升级及长期使用仍需人工验收。",
@@ -255,5 +244,48 @@
   "feedbackTemplate": "反馈格式",
   "feedbackFields": "版本 / Windows 版本 / 网络类型 / 复现步骤 / 预期结果 / 实际结果 / 已脱敏截图。不要发送 API 密钥、完整私人工作区或真实敏感资料。",
   "pending": "此清单需试用者实际完成。自动测试与合成演示不能替代真实账号、设备和地区网络的验收。",
-  "videoDownload": "下载演示视频"
+  "motto": "探索每一个问题，同时不偏离主线。",
+  "heroTags": "原文追问 · 本地笔记 · 思维导图",
+  "scrollCue": "沿主线探索",
+  "featuresTitle": "从疑问，到理解。",
+  "featureTitles": [
+    "原文追问",
+    "上下文选择",
+    "学习导出"
+  ],
+  "featureDescriptions": [
+    "选中原文，在旁边继续问。",
+    "这一次带什么，由你决定。",
+    "把笔记和思维导图带走。"
+  ],
+  "sampleLabel": "合成界面示意",
+  "sampleMain": "主线",
+  "sampleFollow": "追问",
+  "sampleQuestion": "Q、K、V 分别负责什么？",
+  "samplePassage": "Q 表达当前位置想寻找什么。",
+  "sampleFollowQuestion": "为什么 Q 和 K 要分开？",
+  "sampleAnswer": "一个表达需求，一个提供匹配特征。",
+  "sampleContext": "本次上下文",
+  "sampleHistory": "来源回答",
+  "sampleBranch": "追问历史",
+  "sampleSibling": "其他追问",
+  "samplePrivate": "私人笔记",
+  "sampleSelected": "已选择",
+  "sampleNoteTitle": "我的学习笔记",
+  "sampleNoteBody": "查询与匹配，是两个不同的角色。",
+  "sampleMapRoot": "注意力机制",
+  "sampleMapChild": "Q 与 K",
+  "sampleMapLeaf": "角色不同",
+  "homeDownloadTitle": "开始下一次探索。",
+  "homeDownloadMeta": "免费测试版 · Windows x64 · 自备 API",
+  "downloadDetails": "其他下载与校验",
+  "downloadPageTitle": "下载与校验",
+  "contactPageTitle": "一起改进 ChatNote",
+  "faqPageTitle": "常见问题",
+  "contactShort": "反馈建议，或参与开发。",
+  "fullInterface": "查看完整界面",
+  "compactFooter": "对话保存在本机。",
+  "unsignedCompact": "当前版本未签名，下载前可查看使用说明。",
+  "homeExplore": "查看功能",
+  "sampleRequired": "引用与本次问题始终携带。"
 }
