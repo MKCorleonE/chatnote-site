@@ -1,0 +1,8 @@
+:root {
+ --background:#17191c;--surface:#1e2024;--hover:#25282d;--border:#2d3036;
+ --text:#f0f1f3;--text-secondary:#a0a5ae;--text-tertiary:#858b95;
+ --accent:#a1d9c0;--accent-foreground:#14251c;--forest:#737a84;
+ --radius-control:6px;--radius-panel:8px;--content-width:1120px;--gutter:48px;
+ --ease:cubic-bezier(.22,.61,.36,1);--spring:cubic-bezier(.25,1.25,.4,1);
+ --font:Inter,"Segoe UI",-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+}

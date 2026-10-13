@@ -10,8 +10,8 @@ let links=0,pages=0;for(const file of walk(root)){
  const name=path.relative(root,file);assert(!/\.(exe|db|sqlite|pem|key)$/i.test(name),`Private file: ${name}`);
  if(!file.endsWith('.html'))continue;pages++;const html=fs.readFileSync(file,'utf8');assert(!html.includes('https://github.com/MKCorleonE/ChatNote/'),`Private download: ${name}`);
  for(const m of html.matchAll(/(?:href|src)="([^"#]+)(?:#[^"]*)?"/g)){
-  const url=m[1];if(/^(https?:|mailto:|data:|\/)/.test(url))continue;assert(fs.existsSync(path.resolve(path.dirname(file),decodeURIComponent(url))),`Missing ${url} in ${name}`);links++;
+  const url=m[1];if(/^(https?:|mailto:|data:|\/)/.test(url))continue;assert(fs.existsSync(path.resolve(path.dirname(file),decodeURIComponent(url.split('?')[0]))),`Missing ${url} in ${name}`);links++;
  }
 }
-assert(pages>=19);assert(fs.statSync(path.join(root,'assets/walkthrough.mp4')).size>1000);
+assert.equal(pages,29);for(const dir of ['', 'en/', 'zh-hant/']){const home=fs.readFileSync(path.join(root,dir,'index.html'),'utf8');assert(!/walkthrough\.mp4|demo-player|demo-play/.test(home),'Video removed');assert(home.includes('forest-chapter'));assert(home.includes('downloads.html'));}
 console.log(`PASS: 3 locale structures, ${pages} HTML files, ${links} local links, 2 versions, no private app downloads or binary/source leakage.`);
