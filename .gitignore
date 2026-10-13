@@ -1,0 +1,9 @@
+node_modules/
+.cache/
+*.exe
+*.db
+*.sqlite
+*.log
+.env
+.env.*
+!.env.example

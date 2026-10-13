@@ -1,0 +1,259 @@
+{
+  "lang": "en",
+  "title": "ChatNote · Follow a question. Keep the insight.",
+  "description": "A Windows AI conversation tool for learning. Ask beside the source, keep local notes, and revisit your thinking through mind maps.",
+  "skip": "Skip to main content",
+  "navFeatures": "Features",
+  "navGuide": "Get started",
+  "navDownloads": "Download",
+  "navContact": "Get involved",
+  "language": "Language",
+  "beta": "Free beta · Windows x64",
+  "heroA": "Follow a question.",
+  "heroB": "Keep the insight.",
+  "heroText": "Ask right beside the passage that made you curious. Keep the main conversation clear, with your follow-ups, notes and thinking connected.",
+  "download": "Download for Windows",
+  "watch": "See how it works",
+  "meta": "0.12.0 · Bring your own API · Saved on your device",
+  "caption": "Current application interface · Synthetic learning content, no real user data",
+  "workflowLabel": "ONE QUESTION, MORE UNDERSTANDING",
+  "workflowTitle": "Stay on track. Explore every question.",
+  "workflowText": "Move from reading to follow-ups to review, with a trail you can return to.",
+  "step1": "Learn along the main thread",
+  "step1text": "Explore a topic in a familiar conversation. Read text, equations and code in one space.",
+  "step2": "Ask beside the source",
+  "step2text": "Select text or an equation to start a separate follow-up. Return to its source without searching a long conversation.",
+  "step3": "Take your understanding with you",
+  "step3text": "Review the question hierarchy, add your own notes, then export learning notes or an HTML mind map.",
+  "demoLabel": "45 SECONDS · SYNTHETIC WALKTHROUGH",
+  "demoTitle": "See where an insight came from.",
+  "demoText": "Pause or jump through this guided presentation of current app screenshots and prepared content. It sends no model requests.",
+  "play": "Play walkthrough",
+  "pause": "Pause walkthrough",
+  "demo1": "01 / Conversation and source follow-up",
+  "demo2": "02 / Connections between questions",
+  "demo3": "03 / Choose your context",
+  "demo4": "04 / Export a learning artifact",
+  "demoCaptions": [
+    "Explore a source passage in the right panel while keeping the main thread on the left.",
+    "Review the hierarchy in a horizontal map. Expand details and adjust card widths.",
+    "Send directly by default. Open context selection when needed; your selection stays saved.",
+    "Export notes or an HTML mind map to take your saved learning process with you."
+  ],
+  "openMap": "Open the interactive mind map example",
+  "sampleNote": "This synthetic example is an existing export. Expand cards and drag to resize. Its original content mixes Chinese and English.",
+  "featureLabel": "DETAILS FOR THOUGHTFUL READING",
+  "featureTitle": "A little more room to understand.",
+  "features": [
+    [
+      "Follow-ups stay connected",
+      "Each follow-up anchors to a passage in its source answer. Explore deeper or return to that passage."
+    ],
+    [
+      "Choose what the model sees",
+      "Main threads and branches remember their own selections. Private notes are not automatically included in model requests."
+    ],
+    [
+      "Save locally, export deliberately",
+      "Conversations and annotations stay on your device. Workspace backups and HTML learning exports serve different purposes."
+    ],
+    [
+      "Read and review comfortably",
+      "Reading markers, resizable cards, pasted-image previews and three interface languages support everyday learning."
+    ]
+  ],
+  "downloadLabel": "MAKE ROOM FOR YOUR NEXT SESSION",
+  "downloadTitle": "Download ChatNote",
+  "downloadText": "A free Windows x64 beta. Configure your own model service; any model fees are charged by that provider.",
+  "setup": "Installer",
+  "setupText": "Recommended for first use. Includes a setup wizard, shortcuts and an uninstall entry.",
+  "direct": "Direct executable",
+  "directText": "The program needs no installation, but still uses a local workspace and the system credential vault. It is not a fully portable mode.",
+  "getSetup": "Download installer",
+  "getDirect": "Download executable",
+  "checksum": "Checksums and rollback",
+  "shaLabel": "SHA-256",
+  "copy": "Copy checksum",
+  "copied": "Copied",
+  "copyFailed": "Could not copy. Select the text and copy it manually.",
+  "release": "Read release notes",
+  "checksums": "Download checksum list",
+  "previous": "Previous version 0.11.0 · For rollback",
+  "rollback": "Before rolling back, export a complete workspace backup in 0.12.0. Version 0.11.0 has no recycle bin interface; restore or clear it in the newer version first.",
+  "system": "Windows 10 / 11 x64 with Microsoft Edge WebView2 Runtime. Downloads for other platforms are not available yet.",
+  "runtime": "Official WebView2 download",
+  "unsigned": "The program is not code signed yet. If Windows reports an unknown publisher, verify the source and checksum. Do not disable system security protections.",
+  "update": "Manual updates: back up your workspace → close the old program → install the new version. Updates preserve your workspace and system credentials.",
+  "version": "Version",
+  "publicDate": "Public distribution date",
+  "betaLink": "Beta use information",
+  "guideLabel": "YOUR FIRST SESSION",
+  "guideTitle": "Start with your first question.",
+  "guideIntro": "Prepare a working model API account, then try a topic without sensitive information.",
+  "guideSteps": [
+    [
+      "Download and install",
+      "Choose the installer and verify its source and SHA-256. If WebView2 is missing, install it from Microsoft. Preserve your existing workspace; do not overwrite it with example data."
+    ],
+    [
+      "Connect your model",
+      "Go to Settings → Models & connection. Add a provider, API endpoint, key and model. Keys are stored in the system vault. Connection checks do not automatically send inference requests; use the provider's official usage page when quota is unavailable."
+    ],
+    [
+      "Ask in the main conversation",
+      "Enter a learning topic and send. By default the main thread includes its own history, without follow-ups. Actual context remains subject to the context budget and provider limits."
+    ],
+    [
+      "Select a passage and ask more",
+      "Select text or an equation to create a branch. By default it uses the snapshot through the source answer and that branch's history, without sibling branches, later main-thread turns or private notes."
+    ],
+    [
+      "Select context when needed",
+      "Open Preview context to choose the scope. Main conversations and follow-ups remember selections separately; new history is not automatically added to a saved selection. Restore defaults if needed and inspect the actual request beside its answer."
+    ],
+    [
+      "Export results and back up",
+      "Add private notes and export notes or HTML maps. Export model-organized notes before closing. Full workspace backups restore original conversations, unlike learning exports; they do not contain vault credentials."
+    ]
+  ],
+  "faqTitle": "A few things before you start",
+  "faq": [
+    [
+      "Is it free?",
+      "The current client is a free beta. API quotas, prices and terms are set by your model provider; the download includes no model credits."
+    ],
+    [
+      "Does every model support images, files and voice?",
+      "No. Images require a vision-capable model. Uploading a file does not mean the model can read it; direct raw-document use with DeepSeek is not guaranteed. Voice requires a transcription-capable API connection in Models & connection. Arbitrary chat APIs are not guaranteed to support transcription."
+    ],
+    [
+      "What is the context budget?",
+      "It limits the scale of historical text in a request by characters, not your provider balance or an exact token quota. History may be shortened or omitted above this limit; inspect the actual request receipt."
+    ],
+    [
+      "Can I restore deleted conversations?",
+      "Whole conversations remain in the recycle bin for 24 hours and are cleared on the next launch after expiry. Restore them before cleanup, or confirm immediate deletion. Individual answer deletion does not use the conversation recycle bin."
+    ],
+    [
+      "Does my content leave my device?",
+      "Local storage does not make model requests offline. Sending transmits your selected context, applicable attachments or transcription audio to the configured service. Check that service's data policy."
+    ],
+    [
+      "Can I use a ChatGPT subscription or another platform?",
+      "The initial public beta guide focuses on your own API access. It makes no promise about ChatGPT subscription authorization or third-party distribution. Only Windows x64 is currently delivered."
+    ],
+    [
+      "What if downloading is slow or fails?",
+      "Downloads are hosted on GitHub Releases and depend on your network. Retry from the release page, then verify the full file. Report your OS, network type and error time without sending keys or private chats."
+    ]
+  ],
+  "contactLabel": "IMPROVE CHATNOTE TOGETHER",
+  "contactTitle": "A better learning tool starts with real use.",
+  "feedback": "Suggestions & feedback",
+  "feedbackText": "What felt confusing? What idea would help? Include your version, OS and steps to reproduce. Remove private conversations and credentials from screenshots.",
+  "develop": "Join the development plan",
+  "developText": "Help with design, development, testing or documentation. Introduce your interests and experience; participation details can be discussed directly with the developer.",
+  "email": "Email",
+  "xhs": "Xiaohongshu ID",
+  "copyContact": "Copy contact",
+  "testing": "See the beta testing checklist",
+  "privacy": "Privacy policy",
+  "terms": "Use information",
+  "changelog": "Changelog",
+  "repo": "Website repository",
+  "footer": "Keep the question. Carry the insight.",
+  "copyright": "© 2026 ChatNote · Publisher MKCorleonE. Application source is currently private.",
+  "privacyTitle": "Privacy policy",
+  "privacyIntro": "Effective: 2026-10-13. This policy separates website visits from the ChatNote client and describes current data flows. It does not promise unimplemented encryption, synchronization or third-party deletion.",
+  "privacySections": [
+    [
+      "Website hosting and visits",
+      "GitHub Pages hosts this website and GitHub Releases distributes installers. GitHub logs visitor IP addresses for security, even without signing in. This site adds no third-party analytics, advertising or tracking scripts. GitHub's own logs and retention follow its privacy policy."
+    ],
+    [
+      "Website preferences",
+      "Language is selected through page URLs. Walkthrough progress stays only in the current page. There are no accounts, and the website collects no chats or API keys. Copy buttons write only the public text you deliberately select to the clipboard."
+    ],
+    [
+      "Local client storage",
+      "Conversations, revisions, annotation anchors, notes, drafts, reading positions and preferences are saved in your local workspace. Attachments are also stored locally. No developer-hosted cloud sync is offered, and database encryption is not promised. Protect your device and backups."
+    ],
+    [
+      "Credentials and model requests",
+      "API keys and login credentials are stored in the system vault. Sending transmits selected context and applicable attachments to your configured model service; transcription sends recorded audio to your selected transcription service. Private notes are not automatically included."
+    ],
+    [
+      "Third-party services",
+      "Model, transcription, authentication, usage pages and download hosting are third-party services that may process content, accounts and network data. Their own policies and terms apply. ChatNote cannot promise their non-retention or deletion."
+    ],
+    [
+      "Retention and deletion",
+      "Whole conversations remain in the recycle bin for 24 hours, then are cleared on the next launch after expiry. Restore before cleanup or confirm permanent deletion. Cleanup covers related recovery records and unshared attachments. It does not promise secure disk erasure; exported files and third-party copies need separate management."
+    ],
+    [
+      "Exports, backups and feedback",
+      "You manage your backups and exports, which may contain private content but do not contain system-vault keys. Contact details, descriptions and screenshots you send to the developer are used for communication and feedback handling. Do not send secrets or sensitive original content; contact the developer to request deletion of submitted feedback."
+    ],
+    [
+      "Choices and contact",
+      "Choose services, preview context, stop requests, manage the recycle bin and back up. Stopping locally does not retract data already received by a third party. For privacy questions, contact 529023573@qq.com or Xiaohongshu ID 1006863642. Updates to this policy will show their date."
+    ]
+  ],
+  "githubPrivacy": "GitHub privacy statement",
+  "pagesPrivacy": "GitHub Pages data collection information",
+  "termsTitle": "Free beta use information",
+  "termsIntro": "Effective: 2026-10-13. Understand the beta's capabilities and limits before downloading and using it.",
+  "termsSections": [
+    [
+      "Scope of use",
+      "The developer provides the current Windows beta free for personal learning, research and work evaluation. Model access, fees and authorization are separate. Public downloads do not grant application-source access or imply third-party endorsement or certification."
+    ],
+    [
+      "Software and licenses",
+      "ChatNote application source remains private; rights not expressly granted are reserved. You may download and install original official programs. Do not impersonate the official publisher, distribute modified programs as official, or remove attribution. Third-party components retain their licenses, listed in About → Open-source licenses."
+    ],
+    [
+      "Testing, backups and output",
+      "The beta may contain defects. Export full workspace backups regularly. Model output can be wrong; verify important content. You should be entitled to process content you send and follow provider rules. Export organized results promptly."
+    ],
+    [
+      "Updates and rollback",
+      "Updates are manual. Back up and close the program before upgrading; keeping old files does not guarantee every downgrade is compatible. Version 0.11.0 lacks recycle bin management; handle it in 0.12.0 and back up before rollback."
+    ],
+    [
+      "Contact and participation",
+      "Feedback and expressions of interest are welcome. Participation, code rights and collaboration details are discussed separately; downloads do not grant private repository access. Contact 529023573@qq.com or Xiaohongshu ID 1006863642."
+    ]
+  ],
+  "changesTitle": "Changelog",
+  "changesIntro": "Client versions and website distribution are tracked separately. Public distribution copies existing installers byte for byte; the website launch does not rebuild them.",
+  "changes": [
+    [
+      "0.12.0 · Current",
+      "Sending no longer forces context preview; deliberate selections remain saved. Fixes startup language flashes and adds a three-language privacy policy, a 24-hour recycle bin, a laboratory placeholder and a participation page."
+    ],
+    [
+      "0.11.0 · Rollback",
+      "Improves reading markers during scrolling, pasted-image previews and context-window layout. Moves voice settings to Models & connection and fixes repeated spring expansion in mind maps."
+    ],
+    [
+      "Website launch · 2026-10-13",
+      "An independent public website, three-language guides, a synthetic interface walkthrough and interactive mind map. Installers are mirrored to independent public Releases while application source stays private."
+    ]
+  ],
+  "validation": "Validation limits: Windows checks for 0.12.0 include 146 frontend tests, 28 routine native tests (5 explicitly ignored), compilation and formatting. Real API accounts, recording hardware, fresh-machine installation and upgrades, and long-term use still need human validation.",
+  "testingTitle": "Complete a learning session together",
+  "testingIntro": "The initial beta aims to collect feedback from about 10–20 Windows users. This page is a voluntary testing and contact guide; it does not automatically invite or message anyone.",
+  "testingSteps": [
+    "Record Windows version, network type and client version; verify the downloaded file checksum.",
+    "Install on a fresh computer or with a backed-up workspace. Check startup and preservation of existing data.",
+    "Configure a working API of your own. Complete a main question and source follow-up without sensitive content.",
+    "Choose context deliberately; check that the scope persists through sending, switching and restarting.",
+    "Export notes and an HTML map, then restart to check retained conversations and private notes.",
+    "Visit and download over both Wi-Fi and mobile data. Record failure times and messages."
+  ],
+  "feedbackTemplate": "Feedback format",
+  "feedbackFields": "Version / Windows version / network type / reproduction steps / expected result / actual result / sanitized screenshot. Do not send API keys, complete private workspaces or sensitive information.",
+  "pending": "Testers must complete these steps in practice. Automated checks and synthetic demonstrations do not replace real-account, device or regional network validation.",
+  "videoDownload": "Download walkthrough"
+}

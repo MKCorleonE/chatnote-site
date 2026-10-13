@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mkcorleone.github.io/chatnote-site/sitemap.xml
