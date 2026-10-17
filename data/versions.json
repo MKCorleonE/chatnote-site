@@ -1,15 +1,66 @@
 {
-  "latest": "0.12.0",
+  "latest": "0.13.0",
   "publisher": "MKCorleonE",
   "platform": "Windows x64",
   "signed": false,
-  "repository": "https://github.com/MKCorleonE/chatnote-site",
+  "repository": "https://github.com/MKCorleonE/ChatNote",
   "versions": [
-    {"version":"0.12.0","date":"2026-10-13","files":[
-      {"kind":"setup","name":"ChatNote_0.12.0_x64-setup.exe","size":4814660,"sha256":"edd0ed852c3657102308359b25f086e9203daca39616faf05885a3ac7f2e509a"},
-      {"kind":"direct","name":"ChatNote_0.12.0.exe","size":12728832,"sha256":"effc978c70ec8566d56a2857f195fbeeda39168a6ed1370e9a1c83dfa70f575c"}]},
-    {"version":"0.11.0","date":"2026-10-13","files":[
-      {"kind":"setup","name":"ChatNote_0.11.0_x64-setup.exe","size":4801122,"sha256":"c8feef0a80190fd32777b242389fbba83c75b650735f3bdbf772822af5345c07"},
-      {"kind":"direct","name":"ChatNote_0.11.0.exe","size":12699648,"sha256":"9815f267e56c6f511379bc449bad3af45c3589bd0a50473180ab88b14b07e9a2"}]}
+    {
+      "version": "0.13.0",
+      "date": "2026-10-17",
+      "repository": "https://github.com/MKCorleonE/ChatNote",
+      "files": [
+        {
+          "kind": "setup",
+          "name": "ChatNote_0.13.0_x64-setup.exe",
+          "size": 5031437,
+          "sha256": "9a7d236612614e1bc8797324a70caf7a01b83ccff4d9b581ef0b92bf05e3daf7"
+        },
+        {
+          "kind": "direct",
+          "name": "ChatNote_0.13.0.exe",
+          "size": 13596160,
+          "sha256": "2c9b93face51ac5a849e818c168ab2296cd1376218c01ecd34843e0880ff5e4b"
+        }
+      ]
+    },
+    {
+      "version": "0.12.0",
+      "date": "2026-10-13",
+      "files": [
+        {
+          "kind": "setup",
+          "name": "ChatNote_0.12.0_x64-setup.exe",
+          "size": 4814660,
+          "sha256": "edd0ed852c3657102308359b25f086e9203daca39616faf05885a3ac7f2e509a"
+        },
+        {
+          "kind": "direct",
+          "name": "ChatNote_0.12.0.exe",
+          "size": 12728832,
+          "sha256": "effc978c70ec8566d56a2857f195fbeeda39168a6ed1370e9a1c83dfa70f575c"
+        }
+      ],
+      "repository": "https://github.com/MKCorleonE/chatnote-site"
+    },
+    {
+      "version": "0.11.0",
+      "date": "2026-10-13",
+      "files": [
+        {
+          "kind": "setup",
+          "name": "ChatNote_0.11.0_x64-setup.exe",
+          "size": 4801122,
+          "sha256": "c8feef0a80190fd32777b242389fbba83c75b650735f3bdbf772822af5345c07"
+        },
+        {
+          "kind": "direct",
+          "name": "ChatNote_0.11.0.exe",
+          "size": 12699648,
+          "sha256": "9815f267e56c6f511379bc449bad3af45c3589bd0a50473180ab88b14b07e9a2"
+        }
+      ],
+      "repository": "https://github.com/MKCorleonE/chatnote-site"
+    }
   ]
 }

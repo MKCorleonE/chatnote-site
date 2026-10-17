@@ -1,3 +1,11 @@
+# 0.13.0起的发布安排
+
+官网继续由本仓库GitHub Pages提供；完整应用源码与新安装包由公开MKCorleonE/ChatNote管理，采用PolyForm Perimeter 1.0.1。网站版本1.2.0同步三语自动更新与源码可见说明。
+
+发布顺序：应用检查/签名 → 草稿Release资产验签/摘要 → 发布应用Release → 更新data/versions.json与updates/stable.json → 构建与检查网站 → Pages部署与匿名下载验签。版本清单只包含公开信息，不含签名私钥。已有0.12.0/0.11.0附件保留，不重复上传新版。
+
+以下为历史建站记录，其中私有状态由上方当前安排取代。
+
 # 官网发布记录 · 2026-10-13
 
 官网：https://mkcorleone.github.io/chatnote-site/

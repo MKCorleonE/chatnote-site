@@ -14,7 +14,7 @@
   "heroText": "Ask right beside the passage that made you curious. Keep the main conversation clear, with your follow-ups, notes and thinking connected.",
   "download": "Download for Windows",
   "watch": "See how it works",
-  "meta": "0.12.0 · Bring your own API · Saved on your device",
+  "meta": "0.13.0 · Bring your own API · Saved on your device",
   "caption": "Current application interface · Synthetic learning content, no real user data",
   "workflowLabel": "ONE QUESTION, MORE UNDERSTANDING",
   "workflowTitle": "Stay on track. Explore every question.",
@@ -63,12 +63,12 @@
   "copyFailed": "Could not copy. Select the text and copy it manually.",
   "release": "Read release notes",
   "checksums": "Download checksum list",
-  "previous": "Previous version 0.11.0 · For rollback",
-  "rollback": "Before rolling back, export a complete workspace backup in 0.12.0. Version 0.11.0 has no recycle bin interface; restore or clear it in the newer version first.",
+  "previous": "Previous version 0.12.0 · Rollback",
+  "rollback": "Export a full workspace backup before rollback. An older version may not understand newer data; keeping an installer does not guarantee compatibility.",
   "system": "Windows 10 / 11 x64 with Microsoft Edge WebView2 Runtime. Downloads for other platforms are not available yet.",
   "runtime": "Official WebView2 download",
   "unsigned": "The program is not code signed yet. If Windows reports an unknown publisher, verify the source and checksum. Do not disable system security protections.",
-  "update": "Manual updates: back up your workspace → close the old program → install the new version. Updates preserve your workspace and system credentials.",
+  "update": "Version 0.13.0 checks and downloads signed updates after startup. Restart and update when ready, or install the cached update on the next launch. Manual checks are in Settings → About. Older versions need one manual upgrade.",
   "version": "Version",
   "publicDate": "Public distribution date",
   "betaLink": "Beta use information",
@@ -147,13 +147,13 @@
   "changelog": "Changelog",
   "repo": "Website repository",
   "footer": "Keep the question. Carry the insight.",
-  "copyright": "© 2026 ChatNote · Publisher MKCorleonE. Application source is currently private.",
+  "copyright": "© 2026 ChatNote · MKCorleonE · PolyForm Perimeter 1.0.1",
   "privacyTitle": "Privacy policy",
   "privacyIntro": "Effective: 2026-10-13. This policy separates website visits from the ChatNote client and describes current data flows. It does not promise unimplemented encryption, synchronization or third-party deletion.",
   "privacySections": [
     [
       "Website hosting and visits",
-      "GitHub Pages hosts this website and GitHub Releases distributes installers. GitHub logs visitor IP addresses for security, even without signing in. This site adds no third-party analytics, advertising or tracking scripts. GitHub's own logs and retention follow its privacy policy."
+      "GitHub Pages hosts this website and GitHub Releases distributes installers. GitHub logs visitor IP addresses for security, even without signing in. This site adds no third-party analytics, advertising or tracking scripts. GitHub's own logs and retention follow its privacy policy. Software checks public version metadata and downloads signed updates from GitHub. Hosting receives normal network metadata such as IP addresses, without chats, notes or credentials."
     ],
     [
       "Website preferences",
@@ -191,11 +191,11 @@
   "termsSections": [
     [
       "Scope of use",
-      "The developer provides the current Windows beta free for personal learning, research and work evaluation. Model access, fees and authorization are separate. Public downloads do not grant application-source access or imply third-party endorsement or certification."
+      "Free Windows preview. Model services require your own connection and follow their own billing and terms. Application code is source-available under PolyForm Perimeter 1.0.1."
     ],
     [
       "Software and licenses",
-      "ChatNote application source remains private; rights not expressly granted are reserved. You may download and install original official programs. Do not impersonate the official publisher, distribute modified programs as official, or remove attribution. Third-party components retain their licenses, listed in About → Open-source licenses."
+      "ChatNote source is available under PolyForm Perimeter 1.0.1, which restricts using the software to provide competing products, including free substitutes. This is a source-available license, not OSI open source. Third-party components keep their own licenses. Read the application repository LICENSE and CONTRIBUTING before participation."
     ],
     [
       "Testing, backups and output",
@@ -203,16 +203,20 @@
     ],
     [
       "Updates and rollback",
-      "Updates are manual. Back up and close the program before upgrading; keeping old files does not guarantee every downgrade is compatible. Version 0.11.0 lacks recycle bin management; handle it in 0.12.0 and back up before rollback."
+      "Version 0.13.0 checks and downloads signed updates after startup. Restart and update when ready, or install the cached update on the next launch. Manual checks are in Settings → About. Older versions need one manual upgrade. Export a full workspace backup before rollback. An older version may not understand newer data; keeping an installer does not guarantee compatibility."
     ],
     [
       "Contact and participation",
-      "Feedback and expressions of interest are welcome. Participation, code rights and collaboration details are discussed separately; downloads do not grant private repository access. Contact 529023573@qq.com or Xiaohongshu ID 1006863642."
+      "Use Issues and pull requests in the application repository for contributions. Read LICENSE and CONTRIBUTING. Contacts: 529023573@qq.com and Xiaohongshu 1006863642."
     ]
   ],
   "changesTitle": "Changelog",
   "changesIntro": "Client versions and website distribution are tracked separately. Public distribution copies existing installers byte for byte; the website launch does not rebuild them.",
   "changes": [
+    [
+      "0.13.0 · Signed updates & public development",
+      "Background checks and downloads, install now or on the next launch, and a manual check in About. Source is available under PolyForm Perimeter 1.0.1."
+    ],
     [
       "0.12.0 · Current",
       "Sending no longer forces context preview; deliberate selections remain saved. Fixes startup language flashes and adds a three-language privacy policy, a 24-hour recycle bin, a laboratory placeholder and a participation page."
@@ -230,7 +234,7 @@
       "A scroll-driven forest and winding thread, the original motto, three focused features, and separate detail pages. The walkthrough video is removed. Client version and download assets remain unchanged."
     ]
   ],
-  "validation": "Validation limits: Windows checks for 0.12.0 include 146 frontend tests, 28 routine native tests (5 explicitly ignored), compilation and formatting. Real API accounts, recording hardware, fresh-machine installation and upgrades, and long-term use still need human validation.",
+  "validation": "Validation details and remaining manual checks are recorded in the application repository docs/V0.13.0_VALIDATION.md. Real model accounts, microphones and regional network performance require separate testing.",
   "testingTitle": "Complete a learning session together",
   "testingIntro": "The initial beta aims to collect feedback from about 10–20 Windows users. This page is a voluntary testing and contact guide; it does not automatically invite or message anyone.",
   "testingSteps": [
@@ -287,5 +291,6 @@
   "compactFooter": "Conversations stay on your device.",
   "unsignedCompact": "This version is unsigned. Read the use information before downloading.",
   "homeExplore": "Explore features",
-  "sampleRequired": "The quote and current question stay included."
+  "sampleRequired": "The quote and current question stay included.",
+  "source": "Source & contributions"
 }

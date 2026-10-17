@@ -1,11 +1,12 @@
 {
   "name": "chatnote-site",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
     "check": "node scripts/check.mjs",
     "dev": "node scripts/serve.mjs"
-  }
+  },
+  "license": "SEE LICENSE IN LICENSE"
 }
