@@ -10,8 +10,8 @@
 
 ## 下载
 
-- [当前版本 0.13.0](https://github.com/MKCorleonE/ChatNote/releases/tag/v0.13.0)
-- [回退版本 0.12.0](https://github.com/MKCorleonE/chatnote-site/releases/tag/v0.12.0)
+- [当前版本 0.14.0](https://github.com/MKCorleonE/ChatNote/releases/tag/v0.14.0)
+- [回退版本 0.13.0](https://github.com/MKCorleonE/ChatNote/releases/tag/v0.13.0)
 - [快速开始](https://mkcorleone.github.io/chatnote-site/guide.html) / [隐私政策](https://mkcorleone.github.io/chatnote-site/privacy.html) / [测试版使用说明](https://mkcorleone.github.io/chatnote-site/terms.html)
 
 Windows x64 免费测试版，使用者自备模型 API。安装包尚未代码签名；请核对下载来源与 SHA-256，不要关闭系统安全防护。模型费用及条款由对应服务商决定。
