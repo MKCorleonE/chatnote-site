@@ -218,7 +218,7 @@
       "Background checks and downloads, install now or on the next launch, and a manual check in About. Source is available under PolyForm Perimeter 1.0.1."
     ],
     [
-      "0.12.0 · Current",
+      "0.12.0 · Previous stable release",
       "Sending no longer forces context preview; deliberate selections remain saved. Fixes startup language flashes and adds a three-language privacy policy, a 24-hour recycle bin, a laboratory placeholder and a participation page."
     ],
     [
@@ -227,7 +227,7 @@
     ],
     [
       "Website launch · 2026-10-13",
-      "An independent public website, three-language guides, a synthetic interface walkthrough and interactive mind map. Installers are mirrored to independent public Releases while application source stays private."
+      "An independent public website, three-language guides, a synthetic interface walkthrough and interactive mind map. This historical launch used a separate public release repository; application source became public with 0.13.0."
     ],
     [
       "Website visual redesign · 2026-10-13",
