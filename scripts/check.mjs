@@ -15,3 +15,5 @@ let links=0,pages=0;for(const file of walk(root)){
 }
 assert.equal(pages,29);for(const dir of ['', 'en/', 'zh-hant/']){const home=fs.readFileSync(path.join(root,dir,'index.html'),'utf8');assert(!/walkthrough\.mp4|demo-player|demo-play/.test(home),'Video removed');assert(home.includes('forest-chapter'));assert(home.includes('downloads.html'));}
 console.log(`PASS: 3 locale structures, ${pages} HTML files, ${links} local links, ${versions.versions.length} versions, public application releases, no binary/data leakage.`);
+
+for(const dir of ['', 'en/', 'zh-hant/']){const html=fs.readFileSync(path.join(root,dir,'downloads.html'),'utf8');assert(!/releases\/download\/[^\"]+\/ChatNote_[0-9.]+\.exe/.test(html),'Installer-only download links');assert.equal((html.match(/class=\"download-card\"/g)||[]).length,1);}
