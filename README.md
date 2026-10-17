@@ -2,12 +2,12 @@
 
 官网：https://mkcorleone.github.io/chatnote-site/
 
-本仓库仅包含官网、公开说明与合成展示素材。ChatNote 应用源码保持私有；此处 Release 的自动 Source code 压缩包是官网源码，不是客户端源码。
+本仓库仅包含官网、公开说明与合成展示素材。ChatNote应用源码在公开的[应用仓库](https://github.com/MKCorleonE/ChatNote)，采用PolyForm Perimeter 1.0.1（源码可见，限制竞争用途）。本仓库继续维护官网和updates/stable.json；0.13.0起安装包只在应用仓库发布。旧的下载附件保留为历史。
 
 ## 下载
 
-- [当前版本 0.12.0](https://github.com/MKCorleonE/chatnote-site/releases/tag/v0.12.0)
-- [回退版本 0.11.0](https://github.com/MKCorleonE/chatnote-site/releases/tag/v0.11.0)
+- [当前版本 0.13.0](https://github.com/MKCorleonE/ChatNote/releases/tag/v0.13.0)
+- [回退版本 0.12.0](https://github.com/MKCorleonE/chatnote-site/releases/tag/v0.12.0)
 - [快速开始](https://mkcorleone.github.io/chatnote-site/guide.html) / [隐私政策](https://mkcorleone.github.io/chatnote-site/privacy.html) / [测试版使用说明](https://mkcorleone.github.io/chatnote-site/terms.html)
 
 Windows x64 免费测试版，使用者自备模型 API。安装包尚未代码签名；请核对下载来源与 SHA-256，不要关闭系统安全防护。模型费用及条款由对应服务商决定。
@@ -54,3 +54,5 @@ Pages 从 `main` 根目录发布，无运行时框架、CDN 字体、第三方�
 演示以当前 0.12.0 界面与预制合成内容截图制作，首发的45秒MP4已从当前网站移除，历史提交仍保留。当前功能图为合成界面示意，不发送真实模型请求。示例导图由当前应用导出，使用同一组合成学习内容。
 
 建议反馈、隐私问题与开发参与：邮箱 **529023573@qq.com**；小红书号 **1006863642**。请先脱敏，不要发送密钥或完整私人工作区。
+
+网页源码同样采用根目录LICENSE中的PolyForm Perimeter 1.0.1；素材来源和第三方声明分别保留。
