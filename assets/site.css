@@ -12,3 +12,7 @@
 @media(max-width:780px){.product-section{margin-top:-35svh}.mobile-preview .mini-map>div{padding:8px;font-size:10px}}
 @media(max-height:600px){.hero-stage{min-height:100svh}.hero-copy{bottom:40px}.hero-copy h1{font-size:26px}.hero-copy p{margin:10px 0 15px}.scroll-cue{bottom:40px}}
 @media(prefers-reduced-motion:reduce){.product-section{margin-top:0}}
+
+.downloads{grid-template-columns:minmax(0,1fr);max-width:720px}.download-card .btn{width:100%}
+
+.document .download-card .btn{color:var(--accent-foreground)}

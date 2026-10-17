@@ -14,7 +14,7 @@
   "heroText": "Ask right beside the passage that made you curious. Keep the main conversation clear, with your follow-ups, notes and thinking connected.",
   "download": "Download for Windows",
   "watch": "See how it works",
-  "meta": "0.13.0 · Bring your own API · Saved on your device",
+  "meta": "0.14.0 · Bring your own API · Saved on your device",
   "caption": "Current application interface · Synthetic learning content, no real user data",
   "workflowLabel": "ONE QUESTION, MORE UNDERSTANDING",
   "workflowTitle": "Stay on track. Explore every question.",
@@ -52,10 +52,7 @@
   "downloadText": "A free Windows x64 beta. Configure your own model service; any model fees are charged by that provider.",
   "setup": "Installer",
   "setupText": "Recommended for first use. Includes a setup wizard, shortcuts and an uninstall entry.",
-  "direct": "Direct executable",
-  "directText": "The program needs no installation, but still uses a local workspace and the system credential vault. It is not a fully portable mode.",
   "getSetup": "Download installer",
-  "getDirect": "Download executable",
   "checksum": "Checksums and rollback",
   "shaLabel": "SHA-256",
   "copy": "Copy checksum",
@@ -63,12 +60,12 @@
   "copyFailed": "Could not copy. Select the text and copy it manually.",
   "release": "Read release notes",
   "checksums": "Download checksum list",
-  "previous": "Previous version 0.12.0 · Rollback",
+  "previous": "Previous version 0.13.0 · Rollback",
   "rollback": "Export a full workspace backup before rollback. An older version may not understand newer data; keeping an installer does not guarantee compatibility.",
   "system": "Windows 10 / 11 x64 with Microsoft Edge WebView2 Runtime. Downloads for other platforms are not available yet.",
   "runtime": "Official WebView2 download",
   "unsigned": "The program is not code signed yet. If Windows reports an unknown publisher, verify the source and checksum. Do not disable system security protections.",
-  "update": "Version 0.13.0 checks and downloads signed updates after startup. Restart and update when ready, or install the cached update on the next launch. Manual checks are in Settings → About. Older versions need one manual upgrade.",
+  "update": "ChatNote checks and downloads signed updates after startup. Restart when ready, or install on the next launch. Manual checks are in Settings → About. Version 0.12.0 and earlier need one manual upgrade.",
   "version": "Version",
   "publicDate": "Public distribution date",
   "betaLink": "Beta use information",
@@ -203,7 +200,7 @@
     ],
     [
       "Updates and rollback",
-      "Version 0.13.0 checks and downloads signed updates after startup. Restart and update when ready, or install the cached update on the next launch. Manual checks are in Settings → About. Older versions need one manual upgrade. Export a full workspace backup before rollback. An older version may not understand newer data; keeping an installer does not guarantee compatibility."
+      "ChatNote checks and downloads signed updates after startup. Restart when ready, or install on the next launch. Manual checks are in Settings → About. Version 0.12.0 and earlier need one manual upgrade. Export a full workspace backup before rollback. An older version may not understand newer data; keeping an installer does not guarantee compatibility."
     ],
     [
       "Contact and participation",
@@ -214,7 +211,11 @@
   "changesIntro": "Client versions and website distribution are tracked separately. Public distribution copies existing installers byte for byte; the website launch does not rebuild them.",
   "changes": [
     [
-      "0.13.0 · Signed updates & public development",
+      "0.14.0 · A quieter start & focused notebooks",
+      "Installer-only downloads, quieter About and start screens, an empty notebook before any answers, no browser context menu, and Simplified Chinese for fresh workspaces."
+    ],
+    [
+      "0.13.0 · Previous stable release",
       "Background checks and downloads, install now or on the next launch, and a manual check in About. Source is available under PolyForm Perimeter 1.0.1."
     ],
     [
