@@ -17,3 +17,12 @@ assert.equal(pages,29);for(const dir of ['', 'en/', 'zh-hant/']){const home=fs.r
 console.log(`PASS: 3 locale structures, ${pages} HTML files, ${links} local links, ${versions.versions.length} versions, public application releases, no binary/data leakage.`);
 
 for(const dir of ['', 'en/', 'zh-hant/']){const html=fs.readFileSync(path.join(root,dir,'downloads.html'),'utf8');assert(!/releases\/download\/[^\"]+\/ChatNote_[0-9.]+\.exe/.test(html),'Installer-only download links');assert.equal((html.match(/class=\"download-card\"/g)||[]).length,1);}
+
+const analytics=read('data/analytics.json');
+for(const dir of ['', 'en/', 'zh-hant/'])for(const page of ['index','guide','privacy','terms','changelog','testing','downloads','faq','contact']){
+ const html=fs.readFileSync(path.join(root,dir,page+'.html'),'utf8');
+ assert.equal((html.match(/assets\/analytics\.js/g)||[]).length,analytics.enabled?1:0,'Analytics loader: '+dir+page);
+ if(analytics.enabled){assert(html.includes('data-site-token="'+analytics.siteToken+'"'));assert(!html.includes('src="https://static.cloudflareinsights.com'),'Beacon must use production-only loader');}
+}
+for(const dir of ['', 'en/', 'zh-hant/']){const privacy=fs.readFileSync(path.join(root,dir,'privacy.html'),'utf8');if(analytics.enabled)assert(privacy.includes('https://www.cloudflare.com/privacypolicy/'));}
+console.log('PASS: production-only analytics and three-language privacy disclosure.');

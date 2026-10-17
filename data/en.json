@@ -146,11 +146,11 @@
   "footer": "Keep the question. Carry the insight.",
   "copyright": "© 2026 ChatNote · MKCorleonE · PolyForm Perimeter 1.0.1",
   "privacyTitle": "Privacy policy",
-  "privacyIntro": "Effective: 2026-10-13. This policy separates website visits from the ChatNote client and describes current data flows. It does not promise unimplemented encryption, synchronization or third-party deletion.",
+  "privacyIntro": "Effective October 17, 2026. This notice separately describes website visits and the ChatNote application. It covers implemented data flows, without promising encryption, sync, or third-party deletion capabilities that are not available.",
   "privacySections": [
     [
       "Website hosting and visits",
-      "GitHub Pages hosts this website and GitHub Releases distributes installers. GitHub logs visitor IP addresses for security, even without signing in. This site adds no third-party analytics, advertising or tracking scripts. GitHub's own logs and retention follow its privacy policy. Software checks public version metadata and downloads signed updates from GitHub. Hosting receives normal network metadata such as IP addresses, without chats, notes or credentials."
+      "GitHub Pages hosts this website; GitHub Releases distributes installers. GitHub records visitor IP addresses for security, including for signed-out visitors; its logging, retention and processing follow GitHub’s privacy policy. The application checks a public version file and downloads signed updates from GitHub. Hosting providers receive ordinary network information such as IP addresses, without chats, notes or credentials."
     ],
     [
       "Website preferences",
@@ -293,5 +293,10 @@
   "unsignedCompact": "This version is unsigned. Read the use information before downloading.",
   "homeExplore": "Explore features",
   "sampleRequired": "The quote and current question stay included.",
-  "source": "Source & contributions"
+  "source": "Source & contributions",
+  "analyticsPrivacy": [
+    "Website analytics",
+    "This website uses Cloudflare Web Analytics to understand page views, referral sources, device categories and page performance. The developer views statistics in the authenticated dashboard; no counters appear on the website. The production website loads Cloudflare’s analytics script and sends visit and performance data to Cloudflare. It uses no analytics cookies and collects no chats, notes, API keys or application usage records. Local previews do not enable analytics. This website also respects browser Do Not Track and Global Privacy Control signals. Network restrictions and blockers can cause undercounting. Installer download figures use GitHub’s public release asset counters; they do not represent unique users or successful installations."
+  ],
+  "cloudflarePrivacy": "Cloudflare privacy policy"
 }

@@ -146,11 +146,11 @@
   "footer": "把疑問留下，把理解帶走。",
   "copyright": "© 2026 ChatNote · MKCorleonE · PolyForm Perimeter 1.0.1",
   "privacyTitle": "隱私政策",
-  "privacyIntro": "生效日期：2026-10-13。本說明分別描述官網訪問和 ChatNote 客戶端。這裡只按當前實現說明資料流，不承諾尚未實現的加密、同步或第三方刪除能力。",
+  "privacyIntro": "生效日期：2026-10-17。本說明分別描述官網訪問和 ChatNote 用戶端。這裡僅按目前實作說明資料流，不承諾尚未實現的加密、同步或第三方刪除能力。",
   "privacySections": [
     [
       "官網訪問與託管",
-      "官網由 GitHub Pages 託管，安裝包由 GitHub Releases 分發。GitHub 為安全目的會記錄訪客 IP 地址，即使未登錄。本站未接入額外的第三方統計、廣告或追蹤腳本；GitHub 的日誌、保留與處理遵循其隱私政策。 軟體會檢查公開版本檔並從GitHub下載簽章更新。託管服務接收IP位址等一般網路資訊，不附帶聊天、筆記或憑證。"
+      "官網由 GitHub Pages 託管，安裝包由 GitHub Releases 分發。GitHub 為安全目的會記錄訪客 IP 位址，即使未登入；其日誌、保留與處理遵循 GitHub 隱私政策。軟體會檢查公開版本檔案並從 GitHub 下載簽名更新。託管服務接收 IP 位址等一般網路資訊，不附帶聊天、筆記或憑證。"
     ],
     [
       "官網本機偏好",
@@ -293,5 +293,10 @@
   "unsignedCompact": "目前版本未簽名，下載前可查看使用說明。",
   "homeExplore": "查看功能",
   "sampleRequired": "引用與本次問題始終攜帶。",
-  "source": "原始碼與貢獻"
+  "source": "原始碼與貢獻",
+  "analyticsPrivacy": [
+    "官網訪問統計",
+    "官網使用 Cloudflare Web Analytics 了解瀏覽量、訪問來源、裝置類別及頁面效能，統計由開發者在登入後台後查看，不在官網展示。正式官網會載入 Cloudflare 的統計腳本並將訪問與效能資料傳送至 Cloudflare；不使用分析 Cookie，不收集聊天、筆記、API 金鑰或用戶端使用紀錄。本機預覽不啟用統計；本網站也尊重瀏覽器的「請勿追蹤」和 Global Privacy Control 訊號。網路限制或攔截工具可能造成漏計。安裝包下載次數使用 GitHub 的公開附件計數，不代表獨立使用者數或安裝成功數。"
+  ],
+  "cloudflarePrivacy": "Cloudflare 隱私政策"
 }
