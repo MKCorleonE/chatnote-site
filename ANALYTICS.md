@@ -43,3 +43,5 @@ GitHub 给每个 Release 附件提供公开的 `download_count`。应用仓库�
 自动检查包含三语结构、27页加载器、29个HTML及本地资源链接，以及正式环境加载、本地/镜像排除、隐私信号、重复加载和配置校验。实际后台入库需在发布后用真实浏览器访问并查看 Cloudflare；未看到入库前不能将脚本部署成功写成统计入库成功。
 
 参考：[接入方式](https://developers.cloudflare.com/web-analytics/get-started/)、[指标定义](https://developers.cloudflare.com/web-analytics/data-metrics/high-level-metrics/)、[限制与常见问题](https://developers.cloudflare.com/web-analytics/faq/)、[GitHub下载计数接口](https://docs.github.com/en/rest/releases/assets)。
+
+2026-10-17发布验收：PR #4已合入，Pages构建成功；正式首页挂载官方beacon，线上隐私说明更新。Cloudflare后台已收到本轮验证访问（Visits=1、Page views=1），并非真实用户增长。下载工具实查安装包14次、直接程序12次，包含发布验证与重复下载。未测试目标地区所有网络或真实用户行为。
