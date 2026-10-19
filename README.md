@@ -1,3 +1,7 @@
+# 官网1.4.0：ChatNote 0.15.0 · 2026-10-19
+
+同步0.15.0安装包、摘要与签名更新清单；三语介绍整理稿自动保存、全文搜索、长会话存储与导出范围。下载页明确新版数据库不支持直接降级，说明升级前备份恢复步骤；隐私政策补充独立升级备份的保留规则。Cloudflare统计的域名限制、DNT/GPC排除和公开token沿用，不新增数据采集。
+
 # 官网1.3.1：访问统计
 
 已接入 Cloudflare Web Analytics，27个三语页面统一覆盖，统计仅在维护者登录的 Cloudflare 后台查看，不在官网展示。客户端仍为0.14.0。查看入口、指标口径、下载计数工具与停用方法见 [ANALYTICS.md](ANALYTICS.md)。
@@ -14,8 +18,8 @@
 
 ## 下载
 
-- [当前版本 0.14.0](https://github.com/MKCorleonE/ChatNote/releases/tag/v0.14.0)
-- [回退版本 0.13.0](https://github.com/MKCorleonE/ChatNote/releases/tag/v0.13.0)
+- [当前版本 0.15.0](https://github.com/MKCorleonE/ChatNote/releases/tag/v0.15.0)
+- [回退版本 0.14.0](https://github.com/MKCorleonE/ChatNote/releases/tag/v0.14.0)：须恢复升级前数据库，详见下载页。
 - [快速开始](https://mkcorleone.github.io/chatnote-site/guide.html) / [隐私政策](https://mkcorleone.github.io/chatnote-site/privacy.html) / [测试版使用说明](https://mkcorleone.github.io/chatnote-site/terms.html)
 
 Windows x64 免费测试版，使用者自备模型 API。安装包尚未代码签名；请核对下载来源与 SHA-256，不要关闭系统安全防护。模型费用及条款由对应服务商决定。

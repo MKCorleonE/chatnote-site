@@ -14,7 +14,7 @@
   "heroText": "Ask right beside the passage that made you curious. Keep the main conversation clear, with your follow-ups, notes and thinking connected.",
   "download": "Download for Windows",
   "watch": "See how it works",
-  "meta": "0.14.0 · Bring your own API · Saved on your device",
+  "meta": "0.15.0 · Bring your own API · Saved on your device",
   "caption": "Current application interface · Synthetic learning content, no real user data",
   "workflowLabel": "ONE QUESTION, MORE UNDERSTANDING",
   "workflowTitle": "Stay on track. Explore every question.",
@@ -60,8 +60,8 @@
   "copyFailed": "Could not copy. Select the text and copy it manually.",
   "release": "Read release notes",
   "checksums": "Download checksum list",
-  "previous": "Previous version 0.13.0 · Rollback",
-  "rollback": "Export a full workspace backup before rollback. An older version may not understand newer data; keeping an installer does not guarantee compatibility.",
+  "previous": "Previous version 0.14.0 · Restore an older backup first",
+  "rollback": "0.15.0 upgrades the database format; 0.14.0 cannot read it directly. Close the app, preserve the current database and a full workspace export, then restore the pre-upgrade chatnote.pre-v015.sqlite before downgrading. This older backup does not contain content created after the upgrade.",
   "system": "Windows 10 / 11 x64 with Microsoft Edge WebView2 Runtime. Downloads for other platforms are not available yet.",
   "runtime": "Official WebView2 download",
   "unsigned": "The program is not code signed yet. If Windows reports an unknown publisher, verify the source and checksum. Do not disable system security protections.",
@@ -158,7 +158,7 @@
     ],
     [
       "Local client storage",
-      "Conversations, revisions, annotation anchors, notes, drafts, reading positions and preferences are saved in your local workspace. Attachments are also stored locally. No developer-hosted cloud sync is offered, and database encryption is not promised. Protect your device and backups."
+      "Conversations, revisions, annotation anchors, notes, drafts, reading positions and preferences are saved in your local workspace. Attachments are also stored locally. No developer-hosted cloud sync is offered, and database encryption is not promised. Protect your device and backups. Before converting the database, 0.15.0 keeps chatnote.pre-v015.sqlite beside it. This independent pre-upgrade backup can contain older records and is not rewritten by recycle-bin cleanup. Manage it separately."
     ],
     [
       "Credentials and model requests",
@@ -211,11 +211,15 @@
   "changesIntro": "Client versions and website distribution are tracked separately. Public distribution copies existing installers byte for byte; the website launch does not rebuild them.",
   "changes": [
     [
+      "0.15.0 · Save, find and export",
+      "Model-organized drafts save automatically with history. Full-text search opens matching messages, annotations and notes. Per-conversation storage reduces duplicated text. Choose a sharing or personal export scope before exporting."
+    ],
+    [
       "0.14.0 · A quieter start & focused notebooks",
       "Installer-only downloads, quieter About and start screens, an empty notebook before any answers, no browser context menu, and Simplified Chinese for fresh workspaces."
     ],
     [
-      "0.13.0 · Previous stable release",
+      "0.13.0 · Signed automatic updates",
       "Background checks and downloads, install now or on the next launch, and a manual check in About. Source is available under PolyForm Perimeter 1.0.1."
     ],
     [
@@ -235,7 +239,7 @@
       "A scroll-driven forest and winding thread, the original motto, three focused features, and separate detail pages. The walkthrough video is removed. Client version and download assets remain unchanged."
     ]
   ],
-  "validation": "Validation details and remaining manual checks are recorded in the application repository docs/V0.13.0_VALIDATION.md. Real model accounts, microphones and regional network performance require separate testing.",
+  "validation": "See application repository docs/V0.15.0_VALIDATION.md for automated checks, isolated installation and migration validation. Assistant checks use synthetic data; real model accounts, personal-workspace upgrades and low-end-device performance still require acceptance testing.",
   "testingTitle": "Complete a learning session together",
   "testingIntro": "The initial beta aims to collect feedback from about 10–20 Windows users. This page is a voluntary testing and contact guide; it does not automatically invite or message anyone.",
   "testingSteps": [
