@@ -1,11 +1,11 @@
 {
-  "version": "0.14.0",
-  "notes": "A quieter start and focused notebooks / \u754c\u9762\u7cbe\u7b80\u4e0e\u7a7a\u7b14\u8bb0\u4fdd\u62a4 / \u4ecb\u9762\u7cbe\u7c21\u8207\u7a7a\u7b46\u8a18\u4fdd\u8b77",
-  "pub_date": "2026-10-17T10:13:23.128262Z",
+  "version": "0.15.0",
+  "notes": "Saved learning drafts, full-text search, conversation storage and export scope / \u6574\u7406\u7a3f\u81ea\u52a8\u4fdd\u5b58\u3001\u5168\u6587\u68c0\u7d22\u3001\u957f\u4f1a\u8bdd\u5b58\u50a8\u4e0e\u5bfc\u51fa\u8303\u56f4 / \u6574\u7406\u7a3f\u81ea\u52d5\u4fdd\u5b58\u3001\u5168\u6587\u6aa2\u7d22\u3001\u9577\u5c0d\u8a71\u5132\u5b58\u8207\u532f\u51fa\u7bc4\u570d",
+  "pub_date": "2026-10-19T08:11:21.288996Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/MKCorleonE/ChatNote/releases/download/v0.14.0/ChatNote_0.14.0_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSemViYUs0Y0lwQ0Zia0xhaTB0ZzlSd1hyUS9VZ2pBYUl6SzhrRnBvbDZuQURIWEN1clR4WVNGbTg5N2FsTDRKdWhHZzJFb2tCZVA1clNmN0pXQTFRNGNpdThHR25RK3dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjMxNzg4CWZpbGU6Q2hhdE5vdGVfMC4xNC4wX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjE0LjAKemo2bnJvd21vYWlNT0twQk5QQllEditnSnI5dk9UM0duNEZ3YVIzN1MzZGtwWVJ5WXJpemc1Vm5rVkpFT3RnL096UzNuOEhsZjFsdUd2dzRnYkpkRHc9PQo="
+      "url": "https://github.com/MKCorleonE/ChatNote/releases/download/v0.15.0/ChatNote_0.15.0_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSemViYUs0Y0lwQ0NEZWc2bXhGOUphUnR4VTFIaG8xK1dJTTFUNk1yKzBRY2xCenJpeVBXam50enY0UzFQRUNSSEVEaXhEUjhnenFhRDUxTjkrUUVrb29hTXJJdTNxR1FFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMzk3NDQ3CWZpbGU6Q2hhdE5vdGVfMC4xNS4wX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjE1LjAKSmZtdHdJVXU2bWJVbW1rREpLSnMxNVpWTnpWNHpaUXMwZExObFIwUERnQ3l4Rko1aFMzazJPT1VaYU9iZTN5bS8vcGV2MUhkM0MzWDdWSVpwZG1CQnc9PQo="
     }
   }
 }
