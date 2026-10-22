@@ -1,10 +1,23 @@
 {
-  "latest": "0.15.0",
+  "latest": "0.16.1",
   "publisher": "MKCorleonE",
   "platform": "Windows x64",
   "signed": false,
   "repository": "https://github.com/MKCorleonE/ChatNote",
   "versions": [
+    {
+      "version": "0.16.1",
+      "date": "2026-10-22",
+      "repository": "https://github.com/MKCorleonE/ChatNote",
+      "files": [
+        {
+          "kind": "setup",
+          "name": "ChatNote_0.16.1_x64-setup.exe",
+          "size": 5064312,
+          "sha256": "faa7e8f3242de5c4bb1b5e6914ed2b2dc4f8b09fef62384a1a5d2901f6759740"
+        }
+      ]
+    },
     {
       "version": "0.15.0",
       "date": "2026-10-19",
