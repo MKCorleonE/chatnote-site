@@ -14,7 +14,7 @@
   "heroText": "Ask right beside the passage that made you curious. Keep the main conversation clear, with your follow-ups, notes and thinking connected.",
   "download": "Download for Windows",
   "watch": "See how it works",
-  "meta": "0.15.0 · Bring your own API · Saved on your device",
+  "meta": "0.16.1 · Bring your own API · Saved on your device",
   "caption": "Current application interface · Synthetic learning content, no real user data",
   "workflowLabel": "ONE QUESTION, MORE UNDERSTANDING",
   "workflowTitle": "Stay on track. Explore every question.",
@@ -60,8 +60,8 @@
   "copyFailed": "Could not copy. Select the text and copy it manually.",
   "release": "Read release notes",
   "checksums": "Download checksum list",
-  "previous": "Previous version 0.14.0 · Restore an older backup first",
-  "rollback": "0.15.0 upgrades the database format; 0.14.0 cannot read it directly. Close the app, preserve the current database and a full workspace export, then restore the pre-upgrade chatnote.pre-v015.sqlite before downgrading. This older backup does not contain content created after the upgrade.",
+  "previous": "Previous stable version 0.15.0",
+  "rollback": "0.16.1 and 0.15.0 use database v2. Close the app and preserve the current database and a full workspace backup before downgrading. For 0.14.0, restore the pre-upgrade chatnote.pre-v015.sqlite; that older backup does not contain content created after the upgrade.",
   "system": "Windows 10 / 11 x64 with Microsoft Edge WebView2 Runtime. Downloads for other platforms are not available yet.",
   "runtime": "Official WebView2 download",
   "unsigned": "The program is not code signed yet. If Windows reports an unknown publisher, verify the source and checksum. Do not disable system security protections.",
@@ -211,6 +211,10 @@
   "changesIntro": "Client versions and website distribution are tracked separately. Public distribution copies existing installers byte for byte; the website launch does not rebuild them.",
   "changes": [
     [
+      "0.16.1 · Contributor profile links",
+      "Fix opening contributor GitHub profiles, keep icon buttons and display names, and add pppp. Includes the earlier 0.16.0 branch merge workflow, full-window mind-map canvas and matching offline HTML exports."
+    ],
+    [
       "0.15.0 · Save, find and export",
       "Model-organized drafts save automatically with history. Full-text search opens matching messages, annotations and notes. Per-conversation storage reduces duplicated text. Choose a sharing or personal export scope before exporting."
     ],
@@ -239,7 +243,7 @@
       "A scroll-driven forest and winding thread, the original motto, three focused features, and separate detail pages. The walkthrough video is removed. Client version and download assets remain unchanged."
     ]
   ],
-  "validation": "See application repository docs/V0.15.0_VALIDATION.md for automated checks, isolated installation and migration validation. Assistant checks use synthetic data; real model accounts, personal-workspace upgrades and low-end-device performance still require acceptance testing.",
+  "validation": "See application repository docs/V0.16.1_VALIDATION.md for automated checks, signing and assistant desktop verification in an isolated workspace. Real model accounts, personal-workspace upgrades and low-end devices still require user acceptance.",
   "testingTitle": "Complete a learning session together",
   "testingIntro": "The initial beta aims to collect feedback from about 10–20 Windows users. This page is a voluntary testing and contact guide; it does not automatically invite or message anyone.",
   "testingSteps": [
